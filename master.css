@@ -1,0 +1,646 @@
+#body{
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+}
+
+
+#navbar_format{
+  width: 80%;
+}
+#social{
+  text-decoration: none !important;
+}
+
+/* nasledujuci kod je na to aby hamburger na mobiloch nepadal dole, je to podmienka aby pri obrazovke so sirkou 700px a menej bola sirka navbaru 100% */
+@media only screen and (max-width: 700px) {
+    #navbar_format {
+        width: 100%;
+    }
+}
+#stred_obrazok{
+  font-family: 'Alfa Slab One', cursive;
+  color: white;
+   height: 450px;
+   background-image: url("img/olej.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: right center;
+   position:relative;
+
+
+    /* Create the parallax scrolling effect */
+
+    background-size: cover;
+}
+
+ /* dark filter na pozadie */
+#stred_obrazok:after {
+    content:"";
+    display:block;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1 /*Added this in the updated */
+}
+/* toto zabranuje tomu aby aj vsetko vpredu bolo tmave */
+#stred_obrazok > * {
+    position:relative;
+    z-index:2;
+}
+#biela_matka{
+	padding-top: 3%;
+}
+@media (max-width: 700px) {
+	#biela_matka {
+		padding-top: 6%;
+	}
+	}
+
+#tlacitko{
+  background-color: rgba(55,88,111,0);
+  border: 2px solid white;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 15px;
+  border-radius: 0px;
+  letter-spacing: 1px;
+}
+/* farba tlacitka kontakt pri prejdeni mysou */
+#tlacitko:hover{
+    background-color: white;
+    color: black;
+}
+ /* na zmenenie farby aktivneho linku v navbare */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+	color: #F15A29;
+	border-bottom: 2px solid #F15A29;
+	transition-duration: 0.5s;
+}
+
+#onas{
+	margin-top: 5%;
+	font-size: 1.5rem;
+	padding-bottom: 5%;
+	text-align: center;
+	padding-left: 10%;
+	padding-right: 10%;
+
+
+}
+#onas_h2{
+   text-align: right;
+   font-size: 1.7em;
+   padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 991px) {
+    #onas {
+      font-size: 1em !important;
+      text-align: center;
+      width: 100%;
+    }
+    #onas_h2{
+      text-align: center;
+      font-size: 2em;
+      padding-top: 20px;
+    }
+
+}
+#ikony{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   width: 80%;
+   height: auto;
+}
+@media (max-width: 575.98px) {
+	#ikony {
+		width: 90%;
+	}
+}
+#ikony_div{
+	padding-bottom: 5%;
+	padding-top: 5%;
+}
+ /* animacie ikon */
+#ikony {
+  -webkit-transition:all 0.3s ease-out;
+  -moz-transition:all 0.3s ease-out;
+  -ms-transition:all 0.3s ease-out;
+  -o-transition:all 0.3s ease-out;
+  transition:all 0.3s ease-out;
+}
+
+#ikony:hover {
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -ms-transform:scale(1.1);
+  -o-transform:scale(1.1);
+  transform:scale(1.1);
+}
+/* koniec animacii ikon */
+/*@media only screen and (max-width: 700px){
+  #ikony_div{
+    width: 100%;
+  }
+  #ikony{
+    margin-bottom: 20px;
+
+  }
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pieskovanie{
+	font-family: 'Alfa Slab One', cursive;
+	color: white;
+	height: 300px;
+	background-image: url("img/motor.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	position: relative;
+	padding-top: 134px;
+	padding-left: 0%;
+	/* Create the parallax scrolling effect */
+
+	background-size: cover;
+}
+
+
+ /* dark filter na pozadie */
+#pieskovanie:after {
+    content:"";
+    display:block;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1 /*Added this in the updated */
+}
+/* toto zabranuje tomu aby aj vsetko vpredu bolo tmave */
+#pieskovanie > * {
+    position:relative;
+    z-index:2;
+}
+@media only screen and (max-width: 700px){
+  #pieskovanie{
+	height: 100px;
+	background-image: url("img/motor.jpg");
+
+
+
+
+  }
+ #napispieskovanie{
+   margin-top: -90px;
+ }
+}
+#lestenie{
+	font-family: 'Alfa Slab One', cursive;
+	color: white;
+	height: 300px;
+	background-image: url("img/gears.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	position: relative;
+	padding-top: 134px;
+	padding-left: 0%;
+	margin-top: -50px;
+	/* Create the parallax scrolling effect */
+
+	background-size: cover;
+}
+
+
+ /* dark filter na pozadie */
+#lestenie:after {
+    content:"";
+    display:block;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1 /*Added this in the updated */
+}
+/* toto zabranuje tomu aby aj vsetko vpredu bolo tmave */
+#lestenie > * {
+    position:relative;
+    z-index:2;
+}
+@media only screen and (max-width: 700px){
+  #lestenie{
+	max-height: 100px;
+	height: 50px;
+	background-position: center;
+
+
+
+  }
+
+}
+
+/* o nas sekcia na mobile, nemam ani ponatia ako co funguje */
+.showMore {
+  font-size: 14px;
+  display: block;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.showMore + input {
+ display:none;
+}
+.showMore + input + * {
+
+  max-height: 0;
+  /*and eventually delay an overflow:auto; */
+  overflow:hidden;
+  transition: max-height 0.5s, overflow 0s;
+}
+.showMore + input:checked + * {
+  /* here comes the compromise, set a max-height that would for your usual contents, tu sa da menit vyska toho co vybehne ked sa klikne,to jedine chapem*/
+   max-height: 15em;
+  overflow:auto;
+  transition: max-height 0.5s, overflow 0.5s 0.5s;
+}
+/* o nas sekcia na mobile koniec */
+#odoslat{
+  border-radius: 0px;
+  background-color: rgba(88,55,55,0);
+  border: 2px solid #F15A29;
+  color: #F15A29;
+  height: 50px;
+  width: 100px;
+}
+#odoslat:hover{
+  background-color: #F15A29;
+  color: white;
+	transition-duration: 0.5s;
+}
+#zaujalismevas{
+	font-size: 2em;
+	color: #F15A29;
+	margin-top: 10%;
+}
+#formular{
+	padding-bottom: 30px;
+	padding-top: 30px;
+	border-radius: 0px;
+	margin-bottom: 10%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+
+#kontaktnybanner{
+	font-family: 'Alfa Slab One', cursive;
+	color: white;
+	height: 300px;
+	background-image: url("img/kontaktny.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	position: relative;
+	padding-top: 134px;
+	font-size: 7em;
+	padding-left: 0%;
+	margin-top: -40px;
+	/* Create the parallax scrolling effect */
+
+	background-size: cover;
+}
+
+
+ /* dark filter na pozadie */
+#kontaktnybanner:after {
+    content:"";
+    display:block;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1 /*Added this in the updated */
+}
+/* toto zabranuje tomu aby aj vsetko vpredu bolo tmave */
+#kontaktnybanner > * {
+    position:relative;
+    z-index:2;
+}
+#textzaujem{
+	font-size: 1.5em;
+	text-align: center;
+	width: 100%;
+}
+@media only screen and (max-width: 700px){
+  #kontaktnybanner{
+    font-size: 2.3em;
+
+    max-height: 100px;
+    height: 50px;
+    background-position: center;
+
+
+
+  }
+  #zaujalismevas{
+    text-align: left;
+
+  }
+  #textzaujem{
+    font-size: 1em;
+  }
+
+}
+@media only screen and (max-width: 700px) and (orientation:landscape){
+   /* #ikony{
+      height: 170px;
+      width: 170px;
+      display: none;
+    }*/
+    #piesdiv{
+      float: left;
+    }
+    #lessdiv{
+
+    }
+    #kondiv{
+      float: right;
+    }
+}
+   /* toto je ze od sirky 990 po 700 sa deje to a to */
+/*@media only screen and (max-width: 1168px)  and (min-width: 574px){
+    #napispieskovanie{
+       font-size:80px;
+    }
+
+    #ikony_div{
+      width: 100%;
+      display: none;
+    }*/
+
+/*}
+@media only screen and (max-width:694px)  and (min-width:571px){
+     #ikony{
+       display: none;
+     }
+}
+*/
+
+@media (max-width: 991px) {
+	.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: white !important;
+	background-color: #F15A29 !important;
+    border-bottom: none !important;
+    transition-duration: 0.5s;
+}
+
+	.nav-link:hover {
+		text-decoration: none !important;
+		background-color: #F15A29 !important;
+		color: white !important;
+		border-bottom:  none !important;
+		transition-duration: 0.5s;
+	}
+}
+
+.form-control {
+	border-radius: 0px;
+}
+
+@media (max-width: 576px) {
+	.dps {
+		font-size: 1.8em;
+	}
+
+}
+/* smoothscroll hore */
+#scroll {
+    position:fixed;    /* aby sa scrollovalo zarovno s tebou */
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color: rgba(241,90,41,0.9);
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px;
+    z-index: 99;    /* aby bolo nad vsetkymi vrstvami stale */
+	/*transition-duration: 0.5s;*/
+}
+#scroll span {
+    position:absolute;   /* to je na tu sipku v strede toto cele */
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+#scroll:hover {
+    background-color:#f15a25;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+	transition-duration: 0.5s;
+}
+
+.text {
+	font-size: 1.2rem;
+	border-left: 1px #E0E0E0 solid;
+	padding-left: 0%;
+	padding-right: 0%;
+	text-align: left;
+	margin-top: 10%;
+	margin-bottom: 15%;
+
+}
+h2 {
+	font-size: 7rem;
+}
+h1 {
+	font-size: 7rem;
+}
+@media (max-width: 991px) {
+	h2 {
+		font-size: 2.3rem;
+	}
+	h1 {
+		font-size: 2.3rem;
+	}
+	.text {
+	font-size: 1rem;
+	border-left: none;
+	padding-left: 5%;
+	text-align: center;
+	padding-right: 5%;
+	}
+	.text ul {
+		text-align: left;
+
+	}
+	#onas_h2 {
+		text-align: right;
+	}
+}
+@media only screen and (max-width: 1199.98px)  and (min-width: 680px){
+    #napispieskovanie{
+      font-size: 4rem;
+    }
+}
+@media only screen and (max-width: 680px)  and (min-width: 575.98px){
+  #napispieskovanie{
+    font-size: 3rem;
+  }
+}
+
+}@media (max-width: 575.98px) {
+	#napispieskovanie {
+		font-size: 2.3rem;
+	}
+}
+.hore {
+	padding-left: 5%;
+	padding-right: 5%;
+	border-bottom: 1px solid #E0E0E0;
+}
+.dole {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.left {
+	width: 90%;
+	height: auto;
+	margin-top: 50%;
+}
+.leftdown {
+	margin-top: 80%;
+}
+.leftup {
+	margin-top: 20%;
+}
+@media (max-width: 1199.98px) {
+	.left {
+		margin-top: 80%;
+	}
+	.leftdown {
+	margin-top: 120%;
+}
+}
+	@media (max-width: 991px) {
+		.leftdown {
+	margin-top: 80%;
+}
+		.leftup {
+	margin-top: 70%;
+}
+	.left {
+	opacity: 0.2;
+	position: absolute;
+	top: -610px;
+	z-index: -2;
+	text-align: center;
+	left: 30px;
+		}
+
+	}
+@media (max-width: 767.98px) {
+	.left {
+	top: -320px;
+	z-index: -2;
+
+		}
+	.leftup {
+		top:-420px;
+	}
+	}
+@media (max-width: 575.98px) {
+	.left {
+	display: none;
+
+		}
+
+	}
+
+.cls-1 {
+	fill:  #9A9A9A;
+
+}
+.pad {
+	padding-top: 5%;
+}
+
+#social:hover path , #social:hover circle{
+	fill: #F15A29;
+	transition-duration: 0.5s;
+}
+
+	#lakovanie {
+	font-family: 'Alfa Slab One', cursive;
+	color: white;
+	height: 300px;
+	background-image: url("img/lakbg.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	position: relative;
+	padding-top: 134px;
+	padding-left: 0%;
+	/* Create the parallax scrolling effect */
+
+	background-size: cover;
+}
+
+
+ /* dark filter na pozadie */
+#lakovanie:after {
+    content:"";
+    display:block;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1 /*Added this in the updated */
+}
+/* toto zabranuje tomu aby aj vsetko vpredu bolo tmave */
+#lakovanie > * {
+    position:relative;
+    z-index:2;
+}
+@media only screen and (max-width: 700px){
+  #lakovanie{
+	height: 100px;
+	background-image: url("img/lakbg.jpg");
+  }
